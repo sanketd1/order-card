@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Red Hat Display', sans-serif;
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    .container{
+      height: 100vh;
+      width: 100%;
+      background: url(./images/pattern-background-desktop.svg);
+      background-size: cover;
+      background-position: -800px;
+    }
+
+    .card{
+      width: 350px;
+      height: 570px;
+      background: white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 15px;
+      box-shadow: 1px 7px 10px 10px rgba(0, 0, 0, 0.199);
+    }
+
+    .imgbx{
+      height: 170px;
+      background: url(./images/illustration-hero.svg)center/cover;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+
+    .txtbx{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-left: 40px;  
+      padding-right: 40px;      
+
+    }
+
+    .txtbx h3{
+      margin-top: 30px;
+      font-weight: 800;
+      font-size: 22px;
+    }
+
+    .desc{
+      text-align: center;
+      margin-top: 20px;
+      color: gray;
+      line-height: 25px;
+    }
+
+    .plan{
+      width: 80%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 40px;
+    }
+
+    .prime{
+      font-weight: 800;
+    }
+    .sec{
+      color: grey;
+    }
+
+    a{
+      font-weight: 800;
+      transition: .7s;
+    }
+
+    a:hover{
+      opacity: .5;
+    }
+
+    .btns{
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      height: 120px;
+      margin: auto;
+      margin-top: 30px;
+    }
+
+    .pay{
+      width: 100%;
+      height: 45px;
+      background: blue;
+      color: white;
+      border: none;
+      font-size: 16px;
+      font-weight: 700;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: .7s;
+    }
+    .pay:hover{
+      opacity: .5;
+    }
+
+
+    .can{
+      width: 100%;
+      height: 45px;
+      background: transparent;
+      color: gray;
+      border: none;
+      font-size: 16px;
+      font-weight: 700;
+      margin-top: 15px;
+      cursor: pointer;
+      transition: .7s;
+    }
+    .can:hover{
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+<main class="card">
+  <div class="imgbx">
+
+  </div>
+  <div class="txtbx">
+    <h3>
+  Order Summary
+</h3>
+
+<div class="desc">
+  You can now listen to millions of songs, audiobooks, and podcasts on any 
+  device anywhere you like!
+</div>
+</div>
+<div class="plan">
+<div class="p-img">
+  <img src="./images/icon-music.svg" alt="">
+</div>
+<div class="price">
+  <p class="prime">
+  Annual Plan
+</p>
+<p class="sec">
+  $59.99/year
+</p>
+</div>
+<div class="link">
+  <a href="">Change</a>
+</div>
+</div>
+<div class="btns">
+  <button class="pay">
+  Proceed to Payment
+</button>
+<button class="can">
+  Cancel Order
+</button>
+</div>
+</main>
+</div>
+
+</body>
+</html>
